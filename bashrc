@@ -1,7 +1,6 @@
 # from github.com/skokado/home-dir/bashrc
 alias c='clear'
 alias ..='cd ..'
-alias -='cd -'
 alias ls='ls -ah'
 alias rm='rm -i'
 alias mv='mv -i'
