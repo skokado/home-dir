@@ -7,9 +7,15 @@ if [ $? -ne 0 ] ; then
 fi
 
 ### install pip
+echo "install pip:"
 curl -kL https://bootstrap.pypa.io/get-pip.py | sudo python
 
+### upgrade pip
+echo "upgrade pip:"
+pip install --upgrade pip
+
 ### install pyenv
+echo "install pyenv:"
 sudo yum -y install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel git
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
@@ -20,5 +26,10 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
+### upgrade pyenv
+echo "update pyenv:"
+git clone git://github.com/yyuu/pyenv-update.git ~/.pyenv/plugins/pyenv-update
+pyenv update
+
 # Logout to relogin
-echo 'Please re-login to read profiles !!'
+echo 'Please re-login to apply profiles !!'
