@@ -1,7 +1,7 @@
 # from github.com/skokado/home-dir/bashrc
 alias c='clear'
 alias ..='cd ..'
-alias ls='ls -ah'
+alias ls='ls -ah --color=auto'
 alias rm='rm -i'
 alias mv='mv -i'
 alias p='python'
