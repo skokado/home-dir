@@ -10,5 +10,6 @@ alias ru='ruby'
 alias ra='rails'
 alias d='docker'
 alias dc='docker-compose'
+alias dcup='docker-compose up -d --build'
 alias drm-all='docker rm $(docker ps -f status=exited -q)'
 HISTTIMEFORMAT='%Y-%m-%d %T(%z) ' # history command with timestamp
