@@ -16,8 +16,8 @@ pip install --upgrade pip
 
 ### install pyenv
 echo "install pyenv:"
-sudo yum -y install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel git
-git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+sudo yum -y install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 # edit .bash_profile
 echo '### for pyenv.' >> ~/.bash_profile
